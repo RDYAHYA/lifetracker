@@ -1,0 +1,184 @@
+/* Global */
+body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: url("/static/images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+h3, h5 {
+    font-weight: 600;
+    color: #4e2b2b;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-primary { background-color: #5c6bc0; color: #fff; }
+.btn-primary:hover { background-color: #3f51b5; }
+
+.btn-success { background-color: #43a047; color: #fff; }
+.btn-success:hover { background-color: #2e7d32; }
+
+.btn-warning { background-color: #ffb300; color: #fff; }
+.btn-warning:hover { background-color: #ff8f00; }
+
+.btn-info { background-color: #29b6f6; color: #fff; }
+.btn-info:hover { background-color: #0288d1; }
+
+.btn-secondary { background-color: #9e9e9e; color: #fff; }
+.btn-secondary:hover { background-color: #616161; }
+
+.btn-danger.btn-sm {
+    padding: 2px 6px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.card-body p { margin: 0; font-size: 1rem; }
+
+.card-summary { padding: 1.8rem; margin-top: 2rem; }
+
+/* Notes */
+.note-pinned {
+    background-color: #fff8e1;
+    border-left: 4px solid #ffc107;
+    padding: 0.8rem;
+    margin-bottom: 0.6rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.note-pinned:hover { background-color: #fff3cd; }
+
+.list-group-item {
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.list-group-item:hover { background-color: #f1f3f5; }
+
+/*  Forms */
+form input, form select, form textarea {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 0.6rem;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #5c6bc0;
+    box-shadow: 0 0 5px rgba(92,107,192,0.3);
+    outline: none;
+}
+
+form textarea { resize: none; }
+
+/* Tables */
+.table {
+    font-size: 0.95rem;
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.table-hover tbody tr:hover { background-color: #e3f2fd; }
+
+.table-summary th {
+    padding: 1rem;
+    border-bottom: 2px solid #adb5bd;
+    background-color: #f1f3f5;
+    font-weight: 600;
+}
+
+.table-summary td {
+    padding: 1rem;
+    border-right: 1px solid #dee2e6;
+}
+
+.table-summary td:last-child { border-right: none; }
+.table-summary tbody tr:nth-child(even) { background-color: #f8f9fa; }
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Layout  */
+.container, .row { margin: 0 auto; max-width: 1200px; }
+.row { margin-bottom: 1.5rem; }
+
+/* Responsive */
+@media (max-width: 992px) { .card { margin-bottom: 15px; } }
+@media (max-width: 768px) {
+    .row { flex-direction: column; align-items: center; }
+    .col-md-6 { width: 90%; }
+}
+@media (max-width: 576px) { .btn { font-size: 0.9rem; padding: 0.4rem 0.6rem; } }
+
+/* Register&Login Forms  */
+.Register_Login {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.Register_Login h2 { margin-bottom: 1.5rem; color: #1f2937; }
+.Register_Login .mb-3 label { font-weight: 500; margin-bottom: 0.5rem; text-align: left; }
+.Register_Login input.form-control { width: 100%; padding: 0.6rem 0.8rem; border-radius: 8px; }
+.Register_Login input.form-control:focus { border-color: #5c6bc0; box-shadow: 0 0 6px rgba(92,107,192,0.3); }
+.Register_Login small.text-muted { display: block; margin-top: 0.25rem; font-size: 0.85rem; text-align: left; }
+.Register_Login button.btn { width: 100%; padding: 0.6rem; margin-top: 1rem; }
+
+p.mt-2 { text-align: center; margin-top: 1rem; font-size: 0.9rem; }
+p.mt-2 a { color: #5c6bc0; font-weight: 500; }
+p.mt-2 a:hover { color: #3f51b5; text-decoration: underline; }
+
+@media (max-width: 576px) { .Register_Login { margin: 1rem; padding: 1.5rem; } }

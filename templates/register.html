@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<form  class="Register_Login" action="/register" method="post">
+  <h2>Register</h2>
+  <div class="mb-3">
+    <label>Username</label>
+    <input type="text" name="username" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label>Password</label>
+    <input type="password" name="password" class="form-control" required>
+    <small class="text-muted">Password must be at least 8 characters, with uppercase, lowercase, number & special character.</small>
+  </div>
+  <div class="mb-3">
+    <label>Confirm Password</label>
+    <input type="password" name="confirmation" class="form-control" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+<p class="mt-2">Already have an account? <a href="/login">Login here</a></p>
+{% endblock %}
