@@ -1,5 +1,4 @@
 # LifeTracker  
-#### Video Demo: https://youtu.be/bb45FsmpgPs
 #### Description:  
 "LifeTracker" is a modern and simple web application that helps you organize and track different parts of your daily life — your mood, productivity, expenses, notes, and tasks — all in one place.
 
